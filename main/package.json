@@ -1,33 +1,31 @@
 {
   "name": "main",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Portal app that builds the foundation of multiple SPAs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "webpack-dev-server --port 8000",
+    "build": "webpack -p --progress"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Michael Ruecker",
+  "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.7.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
-    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
-    "@babel/preset-env": "^7.7.6",
-    "@babel/preset-react": "^7.7.4",
-    "babel-loader": "^8.0.6",
-    "clean-webpack-plugin": "^3.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^3.3.0",
     "html-loader": "^0.5.5",
     "style-loader": "^1.0.1",
-    "vue-loader": "^15.7.2",
-    "vue-template-compiler": "^2.6.10",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
-    "single-spa": "^4.4.1",
-    "systemjs": "^0.21.4"
+    "copy-webpack-plugin": "^4.5.1",
+    "single-spa": "^4.0.0",
+    "systemjs": "^0.21.4",
+    "zone.js": "^0.8.26"
   }
 }
