@@ -1,8 +1,7 @@
 <template>
   <div id="app2">
     <img src="./assets/logo.png">
-    <!-- <div @click="toStage1" class="click">click here go to stage1</div> -->
-    <a href="#/vue/stage1">{{'click to go to stage1'}}</a>
+    <a href="#/vue/stage1"><div>click to go to stage1</div></a>
     <router-view/>
   </div>
 </template>
@@ -16,11 +15,6 @@ export default {
     HelloWorld,
     Stage1
   },
-  methods: {
-    toStage1 () {
-      history.pushState('','','#/vue/stage1')
-    }
-  }
 }
 </script>
 
